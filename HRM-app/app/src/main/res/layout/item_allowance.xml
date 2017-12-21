@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorBlack"
+        android:textStyle="bold"
+        android:text="Tên phụ cấp"
+        android:id="@+id/tv_allowance"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="7dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="@dimen/label_info_width"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorBlack"
+            android:text="Bậc"/>
+        <TextView
+            android:layout_width="@dimen/width_column"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_allowance_level"/>
+        <TextView
+            android:layout_width="@dimen/label_info_width"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorBlack"
+            android:text="Giá trị"
+            android:id="@+id/tv_allowance_value_label"
+            />
+        <TextView
+            android:layout_width="@dimen/width_column"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_allowance_value"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="7dp">
+        <TextView
+            android:layout_width="@dimen/label_info_width"
+            android:layout_height="wrap_content"
+            android:text="Áp dụng từ:"
+            android:textColor="@color/colorBlack"/>
+        <TextView
+            android:layout_width="@dimen/width_column"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_allowance_begin"/>
+        <TextView
+            android:layout_width="@dimen/label_info_width"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorBlack"
+            android:text="Kết thúc:"/>
+        <TextView
+            android:layout_width="@dimen/width_column"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_allowance_finish"/>
+    </LinearLayout>
+
+</LinearLayout>

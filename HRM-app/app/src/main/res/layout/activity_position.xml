@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_position"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="study.dog.demottm.PositionActivity"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="@dimen/photocard_width"
+            android:layout_height="@dimen/photocard_height"
+            android:id="@+id/im_photocard"
+            android:src="@drawable/icon_user"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_name"
+            android:text="NGUYỄN HOÀNG GIANG"
+            android:textStyle="bold"
+            android:layout_toRightOf="@+id/im_photocard"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:textSize="@dimen/text_size_stress"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/im_photocard"
+            android:id="@+id/layout_position"
+            android:orientation="horizontal"
+            android:layout_below="@+id/tv_name"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin">
+            <ImageView
+                android:layout_width="@dimen/icon_info_width"
+                android:layout_height="@dimen/icon_info_height"
+                android:id="@+id/im_icon_position"
+                android:src="@drawable/icon_position"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_position_info"
+                android:text="Position"
+                android:layout_marginLeft="@dimen/info_margin_left"
+                android:textSize="@dimen/text_size_stress"
+                android:textColor="@color/colorBlack"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/im_photocard"
+            android:orientation="horizontal"
+            android:layout_below="@+id/layout_position"
+            android:id="@+id/layout_department"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin">
+            <ImageView
+                android:layout_width="@dimen/icon_info_width"
+                android:layout_height="@dimen/icon_info_height"
+                android:id="@+id/im_icon_department"
+                android:src="@drawable/icon_organize"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_department_info"
+                android:text="Department"
+                android:layout_marginLeft="@dimen/info_margin_left"
+                android:textSize="@dimen/text_size_stress"
+                android:textColor="@color/colorBlack"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/im_photocard"
+            android:orientation="horizontal"
+            android:layout_below="@id/layout_department"
+            android:id="@+id/layout_decided"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin">
+            <ImageView
+                android:layout_width="@dimen/icon_info_width"
+                android:layout_height="@dimen/icon_info_height"
+                android:id="@+id/im_icon_decided"
+                android:src="@drawable/icon_decided"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_decided"
+                android:text="Quyết định: "
+                android:textColor="@color/colorBlack"
+                android:layout_marginLeft="@dimen/info_margin_left"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_decided_info"
+                android:text="20150001"
+                android:textColor="@color/colorBlack"/>
+
+        </LinearLayout>
+    </RelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_note"
+        android:text="note note note note note note note note not enote note note note note note note note note note note note note note note note note note"
+        android:drawableBottom="@color/colorBrightBlue"
+        android:backgroundTint="@color/colorBrightBlue"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_title_position_list"
+        android:text="Quá trình công tác"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:textStyle="bold"
+        android:textColor="@color/colorWhite"
+        android:textSize="18dp"
+        android:background="@drawable/button_light_blue"
+        />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lv_position"
+        ></ListView>
+
+
+
+</LinearLayout>

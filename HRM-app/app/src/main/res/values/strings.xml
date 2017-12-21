@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">HRM</string>
+    <string name="title_activity_login">Đăng nhập</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_main">Home</string>
+    <string name="section_format">From section: %1$d</string>
+    <string name="title_activity_profile">Hồ sơ cá nhân</string>
+    <string name="title_activity_acc_manage">Quản lý tài khoản</string>
+    <string name="title_activity_degree">Trình độ bằng cấp</string>
+    <string name="title_activity_position">Chức vụ</string>
+    <string name="title_activity_personal_info">Thông tin cá nhân</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_commended">Hồ sơ khen thưởng kỷ luật</string>
+    <string name="title_activity_commended_detail">Hồ sơ khen thưởng</string>
+    <string name="title_activity_disciplined_detail">Hồ sơ kỷ luật</string>
+    <string name="title_activity_relatives">Thông tin gia đình</string>
+    <string name="title_activity_salary">Thông tin lương</string>
+    <string name="title_activity_pay_sheet">Bảng lương</string>
+</resources>

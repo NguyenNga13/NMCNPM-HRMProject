@@ -1,0 +1,693 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_personal_info"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="study.dog.demottm.PersonalInfoActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_name"
+        android:gravity="center"
+        android:text="NGUYỄN THỊ NGA"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:textColor="@color/colorBrightBlue"
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/photocard_height"
+        android:id="@+id/layout_header_personal"
+        android:layout_below="@+id/tv_name"
+        android:layout_marginBottom="@dimen/activity_vertical_margin">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/layout_header_personal_info"
+            android:layout_alignParentBottom="true"
+            >
+            <ImageView
+                android:layout_width="@dimen/icon_info_width"
+                android:layout_height="@dimen/icon_info_height"
+                android:id="@+id/im_mem_code"
+                android:src="@drawable/icon_id"
+                />
+            <!--<TextView-->
+            <!--android:id="@+id/tv_mem_code"-->
+            <!--android:layout_width="100dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="Mã nhân viên: "-->
+            <!--/>-->
+            <TextView
+                android:id="@+id/tv_mem_code_info"
+                android:layout_width="95dp"
+                android:layout_height="wrap_content"
+                android:text="E0001"
+                android:textStyle="bold"
+                android:layout_toRightOf="@+id/im_mem_code"
+                android:layout_marginLeft="@dimen/info_margin_left"
+                android:paddingBottom="@dimen/padding_info_line"
+                />
+            <ImageView
+                android:layout_width="@dimen/icon_info_width"
+                android:layout_height="@dimen/icon_info_height"
+                android:id="@+id/im_profile_number"
+                android:layout_toRightOf="@+id/tv_mem_code_info"
+                android:src="@drawable/icon_file"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_profile_number"
+                android:layout_toRightOf="@+id/im_profile_number"
+                android:text="12345678"
+                android:layout_marginLeft="@dimen/info_margin_left"
+                android:textStyle="bold"/>
+
+
+            <ImageView
+                android:layout_width="@dimen/icon_info_width"
+                android:layout_height="@dimen/icon_info_height"
+                android:id="@+id/im_gender"
+                android:src="@drawable/icon_gender"
+                android:layout_toRightOf="@+id/tv_dateOfBirth_info"
+                android:layout_below="@id/im_mem_code"/>
+            <TextView
+                android:id="@+id/tv_gender_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nữ"
+                android:layout_toRightOf="@+id/im_gender"
+                android:layout_marginLeft="@dimen/info_margin_left"
+                android:paddingBottom="@dimen/padding_info_line"
+                android:layout_below="@id/im_mem_code"/>
+
+            <ImageView
+                android:layout_width="@dimen/icon_info_width"
+                android:layout_height="@dimen/icon_info_height"
+                android:id="@+id/im_date_of_birth"
+                android:layout_below="@+id/im_mem_code"
+                android:src="@drawable/icon_birthday"
+
+                />
+            <TextView
+                android:id="@+id/tv_dateOfBirth_info"
+                android:layout_width="95dp"
+                android:layout_height="wrap_content"
+                android:text="26/04/1994"
+                android:layout_below="@+id/tv_mem_code_info"
+                android:layout_toRightOf="@+id/im_date_of_birth"
+                android:layout_marginLeft="@dimen/info_margin_left"
+                android:paddingBottom="@dimen/padding_info_line"
+                />
+
+
+            <ImageView
+                android:layout_width="@dimen/icon_info_width"
+                android:layout_height="@dimen/icon_info_height"
+                android:id="@+id/im_phone"
+                android:src="@drawable/icon_phone"
+                android:layout_below="@+id/im_date_of_birth"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_phone_info"
+                android:layout_below="@id/tv_dateOfBirth_info"
+                android:layout_toRightOf="@id/im_phone"
+                android:text="01633394267"
+                android:layout_marginLeft="@dimen/info_margin_left"
+                android:paddingBottom="@dimen/padding_info_line"
+                />
+            <!--<TextView-->
+            <!--android:layout_width="70dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:id="@+id/tv_mail"-->
+            <!--android:layout_below="@id/tv_phone"-->
+            <!--android:text="Mail:"-->
+            <!--/>-->
+            <ImageView
+                android:layout_width="@dimen/icon_info_width"
+                android:layout_height="@dimen/icon_info_height"
+                android:id="@+id/im_mail"
+                android:layout_below="@+id/im_phone"
+                android:src="@drawable/icon_mail"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_mail_info"
+                android:layout_below="@id/tv_phone_info"
+                android:layout_toRightOf="@id/im_mail"
+                android:text="nguyennga94.hg@gmail.com"
+                android:layout_marginLeft="@dimen/info_margin_left"
+                android:paddingBottom="@dimen/padding_info_line"/>
+
+        </RelativeLayout>
+        <ImageView
+            android:id="@+id/im_photocard"
+            android:layout_width="@dimen/photocard_width"
+            android:layout_height="@dimen/photocard_height"
+            android:src="@drawable/icon_user"
+            android:layout_alignParentRight="true"
+            android:layout_toRightOf="@+id/layout_header_personal_info" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/layout_identity"
+        android:layout_below="@id/layout_header_personal">
+        <ImageView
+            android:layout_width="@dimen/icon_title_width"
+            android:layout_height="@dimen/icon_title_height"
+            android:id="@+id/im_identity"
+            android:src="@drawable/icon_identity"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/im_identity"
+            android:text="Căn cước công dân"
+            android:id="@+id/title_identity"
+            android:textStyle="bold"
+            android:textColor="@color/colorBrightBlue"
+            android:textSize="15dp"
+            android:layout_marginLeft="@dimen/info_margin_left"
+            />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/im_identity"
+            android:id="@+id/layout_identity_cmnd">
+
+            <TextView
+                android:layout_width="@dimen/label_info_width"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_country"
+                android:text="Quốc gia "
+                android:textColor="@color/colorBlack"/>
+            <TextView
+                android:layout_width="@dimen/width_column"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/tv_country"
+                android:id="@+id/tv_country_info"
+                android:text="Việt Nam"/>
+            <TextView
+                android:text="CMND "
+                android:layout_width="@dimen/label_info_width"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_idCard"
+                android:layout_toRightOf="@+id/tv_country_info"
+                android:textColor="@color/colorBlack"/>
+
+            <TextView
+                android:text="142732485"
+                android:layout_width="@dimen/width_column"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_idCard_info"
+                android:layout_toRightOf="@+id/tv_idCard" />
+
+            <TextView
+                android:text="Ngày cấp "
+                android:layout_width="@dimen/label_info_width"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_dateOf_idCard"
+                android:layout_below="@+id/tv_country"
+                android:textColor="@color/colorBlack"
+                />
+
+            <TextView
+                android:text="21/04/2011"
+                android:layout_width="@dimen/width_column"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/tv_dateOf_idCard"
+                android:id="@+id/tv_dateOf_idCard_info"
+                android:layout_below="@+id/tv_idCard_info"/>
+            <TextView
+                android:text="Nơi cấp "
+                android:layout_width="@dimen/label_info_width"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_country"
+                android:id="@+id/tv_placeOf_idCard"
+                android:layout_toRightOf="@+id/tv_dateOf_idCard_info"
+                android:textColor="@color/colorBlack"/>
+            <TextView
+                android:text="Hải Dương"
+                android:layout_width="@dimen/width_column"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_idCard"
+                android:layout_toRightOf="@+id/tv_placeOf_idCard"
+                android:id="@+id/tv_placeOf_idCard_info" />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layout_identity_cmnd"
+            android:id="@+id/layout_identity_passport"
+            android:layout_marginTop="@dimen/appbar_padding_top">
+
+            <TextView
+                android:layout_width="@dimen/label_info_width"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_passport"
+                android:text="Hộ chiếu "
+                android:textColor="@color/colorBlack"/>
+            <TextView
+                android:layout_width="@dimen/width_column"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_passport_info"
+                android:layout_toRightOf="@+id/tv_passport"
+                android:text="1234567890"
+                />
+            <TextView
+                android:layout_width="@dimen/label_info_width"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_placeOf_passport"
+                android:text="Nơi cấp "
+                android:layout_toRightOf="@+id/tv_passport_info"
+                android:textColor="@color/colorBlack"
+                />
+            <TextView
+                android:layout_width="@dimen/width_column"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_placeOf_passport_info"
+                android:layout_toRightOf="@+id/tv_placeOf_passport"
+                android:text="Việt Nam"
+                />
+            <TextView
+                android:layout_width="@dimen/label_info_width"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_dateOf_passport"
+                android:text="Ngày cấp "
+                android:layout_below="@+id/tv_placeOf_passport_info"
+                android:textColor="@color/colorBlack"/>
+            <TextView
+                android:layout_width="@dimen/width_column"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_placeOf_passport_info"
+                android:id="@+id/tv_dateOf_passport_info"
+                android:text="12/12/2012"
+                android:layout_toRightOf="@+id/tv_dateOf_passport"/>
+            <TextView
+                android:layout_width="@dimen/label_info_width"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_expire_passport"
+                android:layout_below="@id/tv_placeOf_passport_info"
+                android:text="Hết hạn"
+                android:layout_toRightOf="@id/tv_dateOf_passport_info"
+                android:textColor="@color/colorBlack"/>
+            <TextView
+                android:layout_width="@dimen/width_column"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_expire_passport_info"
+                android:text="12/12/2020"
+                android:layout_below="@+id/tv_placeOf_passport_info"
+                android:layout_toRightOf="@id/tv_expire_passport"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout_identity"
+        android:id="@+id/layout_hơmetown"
+        android:layout_marginTop="@dimen/activity_vertical_margin">
+        <ImageView
+            android:layout_width="@dimen/icon_title_width"
+            android:layout_height="@dimen/icon_title_height"
+            android:id="@+id/im_hometown"
+            android:src="@drawable/icon_hometown"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/im_hometown"
+            android:text="Quê quán"
+            android:id="@+id/tittle_hơmetown"
+            android:textStyle="bold"
+            android:textColor="@color/colorBrightBlue"
+            android:textSize="15dp"
+            android:drawableBottom="@color/colorPrimary"
+            android:layout_marginLeft="@dimen/info_margin_left"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/layout_hơmetown_1"
+            android:layout_below="@+id/tittle_hơmetown"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/info_margin_left">
+            <TextView
+                android:text="Dân tộc "
+                android:layout_width="@dimen/label_info_width"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_ethnic"
+                android:textColor="@color/colorBlack"/>
+
+            <TextView
+                android:text="Kinh"
+                android:layout_width="@dimen/width_column"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_ethnic_info"
+                />
+
+            <TextView
+                android:text="Tôn giáo "
+                android:layout_width="@dimen/label_info_width"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_religion"
+                android:textColor="@color/colorBlack"
+                />
+
+            <TextView
+                android:text="Không"
+                android:layout_width="@dimen/width_column"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_religion_info"
+                android:layout_marginLeft="@dimen/info_margin_left"
+                />
+        </LinearLayout>
+        <TextView
+            android:layout_width="@dimen/label_info_width"
+            android:layout_height="wrap_content"
+            android:text="Nơi sinh "
+            android:layout_below="@+id/layout_hơmetown_1"
+            android:id="@+id/tv_placeOfBirth"
+            android:textColor="@color/colorBlack"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kim Thành, Hải Dương"
+            android:layout_below="@+id/layout_hơmetown_1"
+            android:layout_toRightOf="@+id/tv_placeOfBirth"
+            android:id="@+id/tv_placeOfBirth_info"
+            />
+        <TextView
+            android:text="Hộ khẩu "
+            android:layout_width="@dimen/label_info_width"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_household_addr"
+            android:layout_below="@+id/tv_placeOfBirth_info"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:textColor="@color/colorBlack"/>
+
+        <TextView
+            android:text="Thượng Vũ, Kim Thành, Hải Dương"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_household_addr_info"
+            android:layout_below="@+id/tv_placeOfBirth_info"
+            android:layout_toRightOf="@+id/tv_household_addr"
+            android:layout_toEndOf="@+id/tv_household_addr"
+            />
+        <TextView
+            android:text="Địa chỉ "
+            android:layout_width="@dimen/label_info_width"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_address"
+            android:layout_below="@+id/tv_household_addr_info"
+            android:textColor="@color/colorBlack"
+            />
+        <TextView
+            android:text="Số 5 ngõ 309 Trương Định, Phường Tương Mai, Quận Hoàng Mai, Hà Nội"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_household_addr_info"
+            android:layout_toRightOf="@+id/tv_address"
+            android:id="@+id/tv_address_info"
+            />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/layout_note"
+        android:layout_below="@+id/layout_hơmetown"
+        android:layout_marginTop="@dimen/activity_vertical_margin">
+        <ImageView
+            android:layout_width="@dimen/icon_title_width"
+            android:layout_height="@dimen/icon_title_height"
+            android:id="@+id/im_note"
+            android:src="@drawable/icon_note"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/title_note"
+            android:layout_toRightOf="@+id/im_note"
+            android:layout_marginLeft="@dimen/info_margin_left"
+            android:text="Ghi chú"
+            android:textStyle="bold"
+            android:textColor="@color/colorBrightBlue"
+            android:textSize="15dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_note"
+            android:layout_below="@+id/im_note"
+            android:layout_marginTop="@dimen/padding_info_line"
+            />
+
+    </RelativeLayout>
+
+
+    <!--<ImageView-->
+        <!--android:layout_width="@dimen/icon_info_width"-->
+        <!--android:layout_height="@dimen/icon_info_height"-->
+        <!--android:id="@+id/im_address"-->
+        <!--android:src="@drawable/icon_address"-->
+        <!--android:layout_below="@+id/layout_header_personal"-->
+        <!--/>-->
+
+
+    <!--<TextView-->
+        <!--android:layout_width="70dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="Nơi sinh: "-->
+        <!--android:layout_below="@+id/tv_address_info"-->
+        <!--android:id="@+id/tv_placeOfBirth"-->
+        <!--/>-->
+    <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="Kim Thành, Hải Dương"-->
+        <!--android:layout_below="@+id/tv_address_info"-->
+        <!--android:layout_toRightOf="@+id/tv_placeOfBirth"-->
+        <!--android:id="@+id/tv_placeOfBirth_info"-->
+      <!--/>-->
+
+    <!--<TextView-->
+        <!--android:text="Số CMND: "-->
+        <!--android:layout_width="70dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:id="@+id/tv_idCard"-->
+        <!--android:layout_below="@+id/tv_household_addr"-->
+        <!--android:layout_alignParentLeft="true"-->
+        <!--android:layout_alignParentStart="true" />-->
+
+    <!--<TextView-->
+        <!--android:text="142732485"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:id="@+id/tv_idCard_info"-->
+        <!--android:layout_below="@+id/tv_household_addr_info"-->
+        <!--android:layout_toRightOf="@+id/tv_idCard"-->
+        <!--android:layout_toEndOf="@+id/tv_idCard" />-->
+
+    <!--<TextView-->
+        <!--android:text="Ngày cấp: "-->
+        <!--android:layout_width="70dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:id="@+id/tv_dateOf_idCard"-->
+        <!--android:layout_below="@+id/tv_idCard"-->
+        <!--/>-->
+
+    <!--<TextView-->
+        <!--android:text="21/04/2011"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_below="@+id/tv_idCard"-->
+        <!--android:layout_toRightOf="@+id/tv_dateOf_idCard"-->
+        <!--android:layout_toEndOf="@+id/tv_dateOf_idCard"-->
+        <!--android:id="@+id/tv_dateOf_idCard_info" />-->
+
+
+    <!--<TextView-->
+        <!--android:text="Nơi cấp: "-->
+        <!--android:layout_width="70dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_below="@+id/tv_idCard"-->
+        <!--android:layout_alignParentLeft="true"-->
+        <!--android:layout_alignParentStart="true"-->
+        <!--android:id="@+id/tv_placeOf_idCard" />-->
+
+    <!--<TextView-->
+        <!--android:text="Hải Dương"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_below="@+id/tv_idCard"-->
+        <!--android:layout_toRightOf="@+id/tv_placeOf_idCard"-->
+        <!--android:layout_toEndOf="@+id/tv_placeOf_idCard"-->
+        <!--android:id="@+id/tv_placeOf_idCard_info" />-->
+
+    <!--<TextView-->
+        <!--android:text="Dân tộc: "-->
+        <!--android:layout_width="70dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_below="@+id/tv_placeOf_idCard"-->
+        <!--android:layout_alignParentLeft="true"-->
+        <!--android:layout_alignParentStart="true"-->
+        <!--android:id="@+id/tv_ethnic" />-->
+
+    <!--<TextView-->
+        <!--android:text="Kinh"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignBottom="@+id/tv_ethnic"-->
+        <!--android:layout_toRightOf="@+id/tv_placeOf_idCard"-->
+        <!--android:layout_toEndOf="@+id/tv_placeOf_idCard"-->
+        <!--android:id="@+id/tv_ethnic_info"-->
+        <!--/>-->
+
+    <!--<TextView-->
+        <!--android:text="Tôn giáo: "-->
+        <!--android:layout_width="70dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignBottom="@+id/tv_ethnic_info"-->
+        <!--android:layout_alignLeft="@+id/tv_dateOf_idCard"-->
+        <!--android:layout_alignStart="@+id/tv_dateOf_idCard"-->
+        <!--android:id="@+id/tv_religion" />-->
+
+    <!--<TextView-->
+        <!--android:text="Không"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignTop="@+id/tv_religion"-->
+        <!--android:layout_toRightOf="@+id/tv_religion"-->
+        <!--android:layout_toEndOf="@+id/tv_religion"-->
+        <!--android:id="@+id/tv_religion_info"-->
+        <!--/>-->
+
+    <!--<TextView-->
+        <!--android:id="@+id/tv_dateOf_adherent"-->
+        <!--android:text="Ngày vào Đảng:"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_below="@+id/tv_religion"/>-->
+
+    <!--<TextView-->
+        <!--android:id="@+id/tv_dateOf_adherent_info"-->
+        <!--android:layout_toRightOf="@+id/tv_dateOf_adherent"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_below="@id/tv_religion"-->
+        <!--android:layout_marginLeft="10dp"-->
+        <!--android:text="10/01/1017"/>-->
+    <!--<TextView-->
+        <!--android:text="Số BHYT: "-->
+        <!--android:layout_width="70dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_below="@+id/tv_dateOf_adherent"-->
+        <!--android:layout_alignParentLeft="true"-->
+        <!--android:layout_alignParentStart="true"-->
+        <!--android:id="@+id/tv_healthIns" />-->
+
+    <!--<TextView-->
+        <!--android:text="123456789012345"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_below="@+id/tv_dateOf_adherent"-->
+        <!--android:layout_toRightOf="@+id/tv_healthIns"-->
+        <!--android:layout_toEndOf="@+id/tv_healthIns"-->
+        <!--android:id="@+id/tv_healthIns_info"-->
+       <!--/>-->
+
+    <!--<TextView-->
+        <!--android:text="Số BHXH: "-->
+        <!--android:layout_width="70dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_below="@+id/tv_healthIns"-->
+        <!--android:layout_alignParentLeft="true"-->
+        <!--android:layout_alignParentStart="true"-->
+        <!--android:id="@+id/tv_socialIns" />-->
+
+    <!--<TextView-->
+        <!--android:text="1234567890"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:id="@+id/tv_socialIns_info"-->
+        <!--android:layout_below="@+id/tv_healthIns_info"-->
+        <!--android:layout_toRightOf="@+id/tv_healthIns"-->
+        <!--android:layout_toEndOf="@+id/tv_healthIns"-->
+       <!--/>-->
+
+    <!--<TextView-->
+        <!--android:text="Tài khoản ngân hàng: "-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:id="@+id/tv_bank_acc"-->
+        <!--android:layout_alignParentLeft="true"-->
+        <!--android:layout_alignParentStart="true"-->
+        <!--android:layout_below="@+id/tv_socialIns"-->
+        <!--android:layout_alignRight="@+id/tv_idCard_info"-->
+        <!--android:layout_alignEnd="@+id/tv_idCard_info" />-->
+
+    <!--<TextView-->
+        <!--android:text="14787925486"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:id="@+id/tv_bank_acc_info"-->
+        <!--android:layout_below="@+id/tv_socialIns"-->
+        <!--android:layout_toRightOf="@id/tv_bank_acc"-->
+        <!--android:layout_alignBottom="@+id/tv_bank_acc"-->
+         <!--/>-->
+
+    <!--<TextView-->
+        <!--android:text="Tình trạng hôn nhân: "-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_below="@+id/tv_bank_acc"-->
+        <!--android:layout_alignParentLeft="true"-->
+        <!--android:layout_alignParentStart="true"-->
+        <!--android:id="@+id/tv_marital_status" />-->
+
+    <!--<TextView-->
+        <!--android:text="Độc thân"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:id="@+id/tv_marital_status_info"-->
+        <!--android:layout_alignBaseline="@+id/tv_marital_status"-->
+        <!--android:layout_alignBottom="@+id/tv_marital_status"-->
+        <!--android:layout_toEndOf="@+id/tv_placeOf_idCard_info"-->
+        <!--android:layout_toRightOf="@+id/tv_placeOf_idCard_info"-->
+        <!--/>-->
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_below="@+id/tv_marital_status"-->
+        <!--android:layout_marginTop="5dp"-->
+        <!--android:orientation="vertical">-->
+    <!--<TextView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="Thông tin gia đình"-->
+        <!--android:textStyle="bold"-->
+        <!--/>-->
+        <!--<ListView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content">-->
+
+        <!--</ListView>-->
+    <!--</LinearLayout>-->
+
+
+</RelativeLayout>

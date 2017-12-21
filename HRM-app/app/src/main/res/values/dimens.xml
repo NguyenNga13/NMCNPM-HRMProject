@@ -1,0 +1,38 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="nav_header_vertical_spacing">16dp</dimen>
+    <dimen name="nav_header_height">200dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="appbar_padding_top">8dp</dimen>
+
+    <dimen name="info_margin_left">10dp</dimen>
+    <dimen name="info_margin_left_15">15dp</dimen>
+    <dimen name="icon_info_width">18dp</dimen>
+    <dimen name="icon_info_height">20dp</dimen>
+    <dimen name="icon_title_width">25dp</dimen>
+    <dimen name="icon_title_height">25dp</dimen>
+
+    <dimen name="padding_info_line">2dp</dimen>
+    <dimen name="photocard_width">80dp</dimen>
+    <dimen name="photocard_height">100dp</dimen>
+
+    <dimen name="width_column">100dp</dimen>
+    <dimen name="label_info_width">70dp</dimen>
+
+    <dimen name="width_icon_relatives">40dp</dimen>
+    <dimen name="margin_left_info_relatives">50dp</dimen>
+    <dimen name="width_column_label">95dp</dimen>
+
+    <dimen name="text_size_stress">15dp</dimen>
+
+    <dimen name="width_icon_degree">70dp</dimen>
+    <dimen name="icon_margin_left">20dp</dimen>
+
+    <dimen name="width_label_paysheet">100dp</dimen>
+    <dimen name="width_label_info">100px</dimen>
+
+
+</resources>

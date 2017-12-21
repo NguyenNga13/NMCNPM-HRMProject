@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="@dimen/activity_vertical_margin"
+    android:paddingTop="@dimen/activity_vertical_margin">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/layout_item_relatives_header"
+        android:layout_marginBottom="5dp">
+        <ImageView
+            android:layout_width="@dimen/width_icon_relatives"
+            android:layout_height="@dimen/width_icon_relatives"
+            android:id="@+id/im_icon_relatives"
+            android:src="@drawable/icon_father"
+
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/im_icon_relatives"
+            android:text="Nguyễn Hoàng Giang"
+            android:textStyle="bold"
+            android:textColor="@color/colorBlack"
+            android:textSize="18dp"
+            android:layout_marginLeft="@dimen/info_margin_left"
+            android:id="@+id/tv_name_relatives"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/im_icon_relatives"
+            android:layout_below="@+id/tv_name_relatives"
+            android:text="Bố"
+            android:layout_marginLeft="@dimen/info_margin_left"
+            android:textColor="@color/colorBrightBlue"
+            android:id="@+id/tv_relationship"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_left_info_relatives">
+        <TextView
+            android:layout_width="@dimen/width_column_label"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_dateOf_birth_relatves"
+            android:text="Ngày sinh"
+           />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_dateOf_birth_relatves_info"
+            android:text="20/08/1972"
+            android:textColor="@color/colorBlack"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_left_info_relatives">
+        <TextView
+            android:layout_width="@dimen/width_column_label"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_career_relatves"
+            android:text="Nghề nghiệp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_career_relatves_info"
+            android:text="Giảng viên"
+            android:textColor="@color/colorBlack"
+           />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_left_info_relatives">
+        <TextView
+            android:layout_width="@dimen/width_column_label"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_workplace_relatves"
+            android:text="Nơi làm việc"
+          />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_workplace_relatves_info"
+            android:text="Đại học Bách Khoa Hà Nội"
+            android:textColor="@color/colorBlack"
+
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_left_info_relatives">
+        <TextView
+            android:layout_width="@dimen/width_column_label"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_phone_relatves"
+            android:text="Điện thoại"
+           />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_phone_relatves_info"
+            android:text="01633387956"
+            android:textColor="@color/colorBlack"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_left_info_relatives">
+        <TextView
+            android:layout_width="@dimen/width_column_label"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_address_relatves"
+            android:text="Đại chỉ"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_address_relatves_info"
+            android:text="Thịnh Liệt, Hoàng Mai, Hà Nội"
+            android:textColor="@color/colorBlack"
+           />
+    </LinearLayout>
+</LinearLayout>

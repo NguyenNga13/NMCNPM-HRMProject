@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="@dimen/activity_vertical_margin">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_time"
+        android:textStyle="bold"
+        android:textColor="@color/colorBlack"
+        android:textSize="16dp"
+        android:text="2012-02-01 :  2015-03-12"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin">
+        <ImageView
+            android:layout_width="@dimen/icon_info_width"
+            android:layout_height="@dimen/icon_info_height"
+            android:id="@+id/im_icon_position_item"
+            android:src="@drawable/icon_position"
+            />
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_position_item"
+            android:text="Nhân viên"
+            android:layout_marginLeft="@dimen/info_margin_left"/>
+        <ImageView
+            android:layout_width="@dimen/icon_info_width"
+            android:layout_height="@dimen/icon_info_height"
+            android:id="@+id/im_icon_status_item"
+            android:src="@drawable/icon_status"
+            android:layout_marginLeft="@dimen/info_margin_left"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_status_item"
+            android:text="Chính thức"
+            android:layout_marginLeft="@dimen/info_margin_left"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin">
+        <ImageView
+            android:layout_width="@dimen/icon_info_width"
+            android:layout_height="@dimen/icon_info_height"
+            android:id="@+id/im_icon_department_item"
+            android:src="@drawable/icon_organize"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_department_item"
+            android:text="Phòng ban"
+            android:layout_marginLeft="@dimen/info_margin_left"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin">
+        <ImageView
+            android:layout_width="@dimen/icon_info_width"
+            android:layout_height="@dimen/icon_info_height"
+            android:id="@+id/im_icon_decided_item"
+            android:src="@drawable/icon_decided"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_decided_item"
+            android:text="Quyết định: "
+            android:layout_marginLeft="@dimen/info_margin_left"
+            />
+    </LinearLayout>
+
+</LinearLayout>

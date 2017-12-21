@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="study.dog.demottm.LoginActivity">
+    <!-- Login progress -->
+    <ProgressBar
+        android:id="@+id/login_progress"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:visibility="gone" />
+
+    <ScrollView
+        android:id="@+id/login_form"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <RelativeLayout
+            android:id="@+id/email_login_form"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_gravity="center_vertical"
+            >
+
+            <!--<ImageView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="130dp"-->
+                <!--android:id="@+id/logo_wing"-->
+                <!--android:src="@drawable/logo_wing"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:layout_centerHorizontal="true"/>-->
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="45dp"
+                android:id="@+id/icon_acc"
+                android:src="@drawable/icon_user"
+                />
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/edit_username"
+                android:hint="Mã nhân viên"
+                android:layout_toRightOf="@id/icon_acc"
+                android:layout_marginLeft="10dp"
+                />
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="50dp"
+                android:layout_below="@id/icon_acc"
+                android:id="@+id/icon_lock_2"
+                android:src="@drawable/icon_lock"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:id="@+id/edit_password"
+                android:hint="Password"
+                android:maxLines="1"
+                android:layout_below="@+id/edit_username"
+                android:layout_toRightOf="@+id/icon_lock_2"
+                android:layout_marginLeft="10dp"/>
+            <TextView
+                android:id="@+id/tv_forgot_password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Quên mật khẩu"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:typeface="monospace"
+                android:layout_marginTop="5dp"
+                android:textColor="#BBB"
+                android:layout_below="@id/edit_password"
+                android:onClick="forgotPassword"
+               />
+
+            <CheckBox
+                android:text="Ghi nhớ "
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/cbox_remember"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:typeface="monospace"
+                android:textColor="#BBB"
+                android:layout_below="@+id/edit_password" />
+            <Button
+                android:id="@+id/bt_login"
+                style="?android:textAppearanceSmall"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/button_light_blue"
+                android:text="Đăng nhập"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:layout_below="@+id/cbox_remember"
+                android:layout_centerHorizontal="true"
+                />
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+</LinearLayout>

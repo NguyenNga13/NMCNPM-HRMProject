@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    >
+
+    <ImageView
+        android:layout_width="@dimen/width_icon_degree"
+        android:layout_height="@dimen/width_icon_degree"
+        android:id="@+id/im_icon_degree"
+        android:src="@drawable/icon_degree"
+        android:layout_gravity="center_vertical"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="@dimen/icon_margin_left">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_specialized"
+            android:textSize="@dimen/text_size_stress"
+            android:textStyle="bold"
+            android:text="Truyền thông mạng máy tính"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="@dimen/icon_info_width"
+                android:layout_height="@dimen/icon_info_height"
+                android:id="@+id/im_icon_level"
+                android:src="@drawable/icon_level_2"
+                />
+            <TextView
+                android:layout_width="@dimen/width_column"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_level"
+                android:layout_marginLeft="@dimen/info_margin_left"
+                android:text="Giởi"
+                />
+            <ImageView
+                android:layout_width="@dimen/icon_info_width"
+                android:layout_height="@dimen/icon_info_height"
+                android:id="@+id/im_icon_system"
+                android:src="@drawable/icon_system"
+                />
+            <TextView
+                android:layout_width="@dimen/width_column"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_degree"
+                android:layout_marginLeft="@dimen/info_margin_left"
+                android:text="Kỹ sư"
+                />
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_issued_by"
+            android:text="Đại học Bách Khoa Hà Nội"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_training_time"
+            android:text="2012-09-20 : 2017-06-30"/>
+    </LinearLayout>
+
+</LinearLayout>
