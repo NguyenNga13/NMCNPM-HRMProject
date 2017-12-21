@@ -70,7 +70,7 @@ public class SalaryActivity extends AppCompatActivity
             public void onClick(View view) {
 //                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
 //                        .setAction("Action", null).show();
-                Intent intentPaySheetActivity = new Intent(SalaryActivity.this, PaySheetActivity.class);
+                Intent intentPaySheetActivity = new Intent(SalaryActivity.this, PayActivity.class);
                 startActivity(intentPaySheetActivity);
             }
         });

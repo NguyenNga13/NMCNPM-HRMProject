@@ -29,19 +29,13 @@ public class PositionActivity extends AppCompatActivity {
     String memCode;
     String memName, memImage;
 
-//    TextView tvMemCode, tvMemName;
-//    ImageView imCardImage;
-
     TextView tvName;
     ImageView imPhotocard;
 
     TextView tvPosition, tvDepartment, tvDecided, tvNote;
 
-//    TextView  tvPosition, tvDate, tvDepart, tvAddr, tvPhone, tvFax;
-
     ArrayList<Position> positionList;
     ListView lvPosition;
-
 
     TokenManager tokenManager;
     IpManager ipManager;
@@ -51,46 +45,12 @@ public class PositionActivity extends AppCompatActivity {
 
     SharedPreferences prefsAESKey;
 
-
     private static final String TAG = "PositionActivity";
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_position);
-
-//        Bundle blGetAcc = getIntent().getBundleExtra("Account");
-//        memCode = blGetAcc.getString("memCode");
-//        memName = blGetAcc.getString("memName");
-//        memImage = blGetAcc.getString("memImage");
-//
-//        tvMemCode = (TextView)findViewById(R.id.tv_code_profile);
-//        tvMemCode.setText(memCode);
-//
-//        tvMemName = (TextView)findViewById(R.id.tv_name_profile);
-//        tvMemName.setText(memName);
-//
-//        imCardImage = (ImageView)findViewById(R.id.im_photocard);
-//        new ImageLoadTask(memImage, imCardImage).execute();
-
-//        tvPosition = (TextView)findViewById(R.id.tv_position);
-//        tvDepart = (TextView)findViewById(R.id.tv_depart);
-//        tvDate = (TextView)findViewById(R.id.tv_date_info);
-//        tvAddr = (TextView)findViewById(R.id.tv_addr_depart_info);
-//        tvPhone = (TextView)findViewById(R.id.tv_phone_depart_info);
-//        tvFax = (TextView)findViewById(R.id.tv_fax_depart_info);
-
-//        runOnUiThread(new Runnable() {
-//            @Override
-//            public void run() {
-//                LocalhostLink link = new LocalhostLink("hrm/service/JSONGetPositionByCode.php");
-//                new callWebservice().execute(link.getLink());
-//                //new callWebservice().execute("http://192.168.0.103:8080/hrm/service/JSONGetPositionByCode.php");
-//            }
-//        });
-
-
 
         ipManager = IpManager.getInstance(getSharedPreferences("prefs", MODE_PRIVATE));
         tokenManager = TokenManager.getInstance(getSharedPreferences("prefsToken", MODE_PRIVATE));
